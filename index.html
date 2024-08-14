@@ -1,1 +1,54 @@
-Kalkulator BMI by Adrian
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+    </header>
+
+    <main>
+        <section id="bmi-form">
+            <h2>Calculate Your BMI</h2>
+            <p>Ideal body weight is everyone's dream. Not only does having a body shape support your appearance, ideal body weight also indicates a healthy body condition. How about you?</p>
+            <form id="formBMI">
+                <label for="gender">Gender:</label>
+                <div id="gender-options">
+                    <button type="button" id="maleButton" class="gender-button">Male</button>
+                    <button type="button" id="femaleButton" class="gender-button">Female</button>
+                </div><br>
+            
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight"><br>
+            
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"><br>
+            
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height"><br>
+            
+                <button type="submit">Calculate BMI</button>
+                <button type="reset" id="resetButton">Reset</button>
+                <div id="errorMessages"></div>
+            </form>        
+            
+        </section>
+
+        <section id="bmi-result">
+            <h2>Your BMI Result</h2>
+            <p id="result"></p>
+        </section>
+
+        <section id="bmi-explanation">
+            <h2>BMI Explanation</h2>
+            <p id="explanation"></p>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
